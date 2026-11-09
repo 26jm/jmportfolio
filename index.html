@@ -5,7 +5,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="AX 서비스 기획자 이정민의 포트폴리오">
 	<title>이정민 | AX 서비스 기획자</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css?v=profile-colors-3">
+	<style>
+		.flip-card { min-width: 0; perspective: 1400px; cursor: pointer; }
+		.flip-card:focus-visible { outline: 3px solid var(--green); outline-offset: 5px; }
+		.flip-card .flip-card-inner { display: grid; position: relative; transform-style: preserve-3d; transition: transform .7s ease; }
+		.flip-card.is-flipped .flip-card-inner { transform: rotateY(180deg); }
+		.flip-card .flip-card-inner > .experience-card { grid-area: 1 / 1; position: relative; inset: auto; min-width: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; transition: none; }
+		.flip-card .flip-front, .flip-card .flip-front:hover { transform: rotateY(0deg); }
+		.flip-card .flip-back, .flip-card .flip-back:hover { transform: rotateY(180deg); }
+		.flip-card .flip-front { pointer-events: auto; }
+		.flip-card .flip-back { pointer-events: none; }
+		.flip-card.is-flipped .flip-front { pointer-events: none; }
+		.flip-card.is-flipped .flip-back { pointer-events: auto; }
+		.flip-hint { display: block; margin-top: 18px; color: var(--green); font-size: 12px; font-weight: 600; }
+		@media (prefers-reduced-motion: reduce) { .flip-card .flip-card-inner { transition: none; } }
+	</style>
 	<style media="not all">
 		@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap');
 
@@ -202,8 +217,9 @@
 				</ul>
 				<dl class="profile-details">
 					<div><dt>전공</dt><dd>성균관대학교 통계학과<br>글로컬문화콘텐츠연계전공 <span>(경제학사, 국문학사)</span><time datetime="2027-02">2027.02 졸업 예정</time></dd></div>
-					<div><dt>자격증</dt><dd>ADsP<br>ITQ OA Master <span>(인터넷 · 한글 · PPT)</span><br>아마추어무선통신 3급(전화)</dd></div>
+					<div><dt>자격증</dt><dd>ADsP<br>OPIc IH<br>ITQ OA Master <span>(인터넷 · 한글 · PPT)</span><br>아마추어무선통신 3급(전화)</dd></div>
 					<div><dt>취미</dt><dd>일본어 공부 · 음악 감상</dd></div>
+					<div><dt>특이 사항</dt><dd><strong>수능완성 윤리와 사상 학생 검토위원</strong><br><span>2020.03–2020.07</span></dd><dd class="profile-extra-item">2016 YIP 삼성전자 학생 소프트웨어특허지원팀 선정<br><span><strong>장애 체험 교육 VR 시스템</strong><br>거절 · 비공개 · 등록번호: 1020160152058</span></dd></div>
 				</dl>
 				<ul class="capabilities" aria-label="핵심 역량">
 					<li class="capability"><span class="label">01 / DISCOVER</span><h3>현장·VOC 기반 문제 정의</h3><p>기업과 시장 취재, 사용자 인터뷰와 정성 조사를 통해 실제 Pain Point를 발견하고 UX 개선안으로 구체화합니다.</p></li>
@@ -221,8 +237,13 @@
 				<header class="section-head"><h2>Experience</h2><p>아이디어를 실체화하고, 결과로 검증한 프로젝트 기록입니다.</p></header>
 				<div class="filters" role="group" aria-label="경험 필터"><button class="filter active" data-filter="all" aria-pressed="true">전체</button><button class="filter" data-filter="ai" aria-pressed="false">AI / AX</button><button class="filter" data-filter="startup" aria-pressed="false">창업 / BM</button><button class="filter" data-filter="leadership" aria-pressed="false">리더십 / 커뮤니케이션</button></div>
 				<section class="timeline" aria-label="주요 경력 및 프로젝트">
-					<article class="experience" data-category="ai"><time class="date">2026.08<br>~ 2026.12</time><div class="experience-card"><h3>우리WON 청년 IT 아카데미</h3><p class="context">고용노동부 · 우리금융그룹 주관</p><div class="detail-grid"><p class="detail"><b>ROLE & ACTIVITY</b>금융 AX 프로세스와 AI 기반 코딩, 금융 도메인 풀스택 개발 프로세스 이수. 금융 비즈니스 문제 해결 서비스 및 AX 해커톤 참여.</p><p class="detail"><b>OUTCOME & FIT</b><strong>교육 과정 이수 및 프로젝트 완수.</strong> IT·AI 메커니즘을 비즈니스 현장에 접목하는 기술 이해도 기반 상품기획 역량 확보.</p></div></div></article>
-					<article class="experience" data-category="ai"><time class="date">2026.08</time><div class="experience-card"><h3>업스테이지 MABC 2026 서포터즈</h3><p class="context">AI 스킬 기획 · 개발 · 콘텐츠</p><div class="detail-grid"><p class="detail"><b>ROLE & ACTIVITY</b>리서치 요약, 메일 초안, 데이터 정리 등 반복 업무 유즈케이스를 정의하고 맞춤형 AI 스킬 3개 개발. 가치와 사용법을 알리는 콘텐츠 제작.</p><p class="detail"><b>OUTCOME & FIT</b><strong>3주간 AI 스킬 3개, 홍보 콘텐츠 3건 완수.</strong> 사용자 니즈 분석부터 AI 에이전트 기획, 브랜딩까지 연결.</p></div></div></article>
+					<article class="experience" data-category="ai"><time class="date">2026.08<br>~ 2026.12</time><div class="flip-card" role="button" tabindex="0" aria-label="우리WON 청년 IT 아카데미: 우리 원픽 프로젝트 상세 보기" aria-pressed="false"><div class="flip-card-inner"><div class="experience-card flip-front"><h3>우리WON 청년 IT 아카데미</h3><p class="context">고용노동부 · 우리금융그룹 주관</p><div class="detail-grid"><p class="detail"><b>ROLE & ACTIVITY</b>금융 AX 프로세스와 AI 기반 코딩, 금융 도메인 풀스택 개발 프로세스 이수. 금융 비즈니스 문제 해결 서비스 및 AX 해커톤 참여.</p><p class="detail"><b>OUTCOME & FIT</b><strong>교육 과정 이수 및 프로젝트 완수.</strong> IT·AI 메커니즘을 비즈니스 현장에 접목하는 기술 이해도 기반 상품기획 역량 확보.</p></div><span class="flip-hint">클릭하여 우리 원픽 프로젝트 보기 ↻</span></div><div class="experience-card flip-back" aria-hidden="true" inert><h3>우리 원픽 (Woori WON Pick)</h3><p class="context">Service PM · 우리WON 청년 IT 아카데미 · AX 해커톤 최우수상</p><div class="detail-grid">
+						<p class="detail"><b>PROJECT & HYPOTHESIS</b>결제 직전 지갑 속 카드 혜택을 코칭하고 이용 실적을 관리하는 AI 금융 서비스 ‘우리 원픽’ 기획. 계좌 이체 중심의 월 3~5회 이용 패턴을 오프라인 결제마다 찾는 일상 금융 앱으로 전환해 MAU를 높인다는 가설 수립.</p>
+						<p class="detail"><b>RISK & ARCHITECTURE</b>확률 기반 AI의 금액·실적 계산에서 발생하는 1원의 오차도 금융 신뢰도를 훼손할 수 있다는 리스크 진단. Vision OCR + Claude LLM의 간판 인식·업종 파싱과 Python 결정론적 룰 엔진의 혜택·실적 계산을 분리하는 파이프라인 설계.</p>
+						<p class="detail"><b>UX & BUSINESS MODEL</b>금융 사용자 페르소나 정의, 마이데이터 연동 UX/UI 와이어프레임 및 Lean Canvas 작성. 타사 카드 이용 고객의 전환을 유도하는 CPA 기반 마케팅 BM 도출.</p>
+						<p class="detail"><b>OUTCOME & FIT</b><strong>AX 해커톤 최우수상 · 수치 오차율 0% 달성.</strong> AI의 한계를 아키텍처로 보완하고 비즈니스 요구를 기술 요건으로 구체화하며, 개발진과 기술 언어로 협업하는 Technical PM 역량 입증.</p>
+					</div><span class="flip-hint">클릭하여 아카데미 소개로 돌아가기 ↻</span></div></div></div></article>
+					<article class="experience" data-category="ai"><time class="date">2026.08</time><div class="experience-card"><h3>업스테이지 MABC 2026 서포터즈</h3><p class="project-link"><a href="https://mabc-dogam.vercel.app/" target="_blank" rel="noopener noreferrer">https://mabc-dogam.vercel.app/ ↗</a></p><p class="context">AI 스킬 기획 · 개발 · 콘텐츠</p><div class="detail-grid"><p class="detail"><b>ROLE & ACTIVITY</b>리서치 요약, 메일 초안, 데이터 정리 등 반복 업무 유즈케이스를 정의하고 맞춤형 AI 스킬 3개 개발. 가치와 사용법을 알리는 콘텐츠 제작.</p><p class="detail"><b>OUTCOME & FIT</b><strong>3주간 AI 스킬 3개, 홍보 콘텐츠 3건 완수.</strong> 사용자 니즈 분석부터 AI 에이전트 기획, 브랜딩까지 연결.</p></div></div></article>
 					<article class="experience" data-category="ai"><time class="date">2026.06<br>~ 2026.08</time><div class="experience-card"><h3>퀀텀 리프레이밍 챌린지 2026</h3><p class="context">DEEPDIVE · 기획 / 분석</p><div class="detail-grid"><p class="detail"><b>ROLE & ACTIVITY</b>야외 공연장 저음역 소음 민원을 발굴. 방향 제어와 음향 최적화 난제를 IonQ 이온트랩 양자 프로세서 기반 모델로 재정의하고 해결 가능성을 검증.</p><p class="detail"><b>OUTCOME & FIT</b><strong>73개 팀 중 본선 진출 · 우수상.</strong> 고난도 현장 문제를 차세대 컴퓨팅 관점에서 재정의하는 AX 기획력 입증.</p></div></div></article>
 					<article class="experience" data-category="startup"><time class="date">2026.03<br>~ 현재</time><div class="experience-card"><h3>성균관대 RISE Rise Crew 2기 창업 프로젝트</h3><p class="context">아이디어 기획 · 시장 검증 · MVP · 해외 IR</p><div class="detail-grid"><p class="detail"><b>ROLE & ACTIVITY</b>창업 아이디어 기획, 시장 검증과 MVP 구현 총괄. 교내 법인 설립 준비팀에 합류해 법인 기틀을 마련하고, 말레이시아 IR 투어 피칭 및 투자 유치 기획 전담.</p><p class="detail"><b>OUTCOME & FIT</b><strong>해외 투자 발표 투어 대상팀 최종 선정 · 법인 설립 추진.</strong> 글로벌 시장 분석과 신제품 사업화 전 과정 경험.</p></div></div></article>
 					<article class="experience" data-category="ai"><time class="date">2026.02<br>~ 2026.08</time><div class="experience-card"><h3>창업아이디어 ON · ‘래미 AI’</h3><p class="context">PO · 마케터 · 음성 기반 AI 어시스턴트</p><div class="detail-grid"><p class="detail"><b>ROLE & ACTIVITY</b>디지털 소외계층을 위한 음성 AI 어시스턴트 기획. 음성 입력, 화면 캡처, Gemini Pro 2.5 NLP, 플로팅 UI 가이드 프로세스 설계. 인스타그램 타깃 마케팅으로 수요 조사.</p><p class="detail"><b>OUTCOME & FIT</b><strong>금상(2위) · 시장 수요 데이터 도출.</strong> LLM/NLP 접목과 실제 수요 검증을 함께 수행.</p></div></div></article>
@@ -242,7 +263,7 @@
 
 			<section id="honors">
 				<div class="bottom-grid">
-					<article><header class="section-head"><h2>Honors</h2></header><ul class="award-list"><li><time>2026</time><span>RISE Rise Crew 2기 말레이시아 IR 투어 대상팀</span></li><li><time>2026</time><span>퀀텀 리프레이밍 챌린지 우수상(한국양자융합센터장상)</span></li><li><time>2026</time><span>AI-VIBE 부트캠프 최우수상(1위)</span></li><li><time>2026</time><span>코스닥협회 우수기자상</span></li><li><time>2025</time><span>창업아이디어 ON 금상(2위)</span></li><li><time>2025</time><span>AI융합 산학연계 해커톤 대상(1위)</span></li><li><time>2022</time><span>서울교통공사 또타 서포터즈 최우수상</span></li><li><time>2015</time><span>대한민국 창의력 챔피언대회 경기도 2위(전국 4위)</span></li></ul></article>
+					<article><header class="section-head"><h2>Honors</h2></header><ul class="award-list"><li><time datetime="2026-08">2026.08</time><span>AI Document Builders Challenge with Upstage 우수상 · 포카캐치</span></li><li><time>2026</time><span>우리WON 청년 IT 아카데미 AX 해커톤 최우수상 · 우리 원픽</span></li><li><time>2026</time><span>RISE Rise Crew 2기 말레이시아 IR 투어 대상팀</span></li><li><time>2026</time><span>퀀텀 리프레이밍 챌린지 우수상(한국양자융합센터장상)</span></li><li><time>2026</time><span>AI-VIBE 부트캠프 최우수상(1위)</span></li><li><time>2026</time><span>코스닥협회 우수기자상</span></li><li><time>2025</time><span>창업아이디어 ON 금상(2위)</span></li><li><time>2025</time><span>AI융합 산학연계 해커톤 대상(1위)</span></li><li><time>2022</time><span>서울교통공사 또타 서포터즈 최우수상</span></li><li><time>2016</time><span>LG 생활과학 아이디어 공모전 장려상 · 접이식 칸막이 조절 사물함</span></li><li><time>2015</time><span>대한민국 창의력 챔피언대회 경기도 2위(전국 4위)</span></li></ul></article>
 					<article id="talk"><header class="section-head"><h2>Talk</h2></header><div class="paper"><span class="label">ACADEMIC PRESENTATION · 2025</span><h3>한국스마트미디어학회<br>추계학술대회 공식 초청 발표</h3><p>전남대학교 AI 융합 문제발굴 산학연계 해커톤 수상작의 서비스 구조와 AI 개발 과정을 주제로 발표했습니다.</p></div></article>
 				</div>
 			</section>
@@ -250,11 +271,29 @@
 
 	<footer id="contact"><div class="wrap"><div class="contact"><h2>함께 더 나은 답을<br>만들어 보시겠어요?</h2><address class="contact-links"><a href="mailto:20012jm@g.skku.edu">20012jm@g.skku.edu</a><a href="https://github.com/26jm" target="_blank" rel="noreferrer">github.com/26jm ↗</a></address></div><p class="copyright">LEE JEONGMIN · AX SERVICE PLANNER · 2026</p></div></footer>
 	<script>
+		document.querySelectorAll('.flip-card').forEach((card) => {
+			const toggleCard = () => {
+				const flipped = card.classList.toggle('is-flipped');
+				card.setAttribute('aria-pressed', String(flipped));
+				card.setAttribute('aria-label', flipped ? '우리 원픽 프로젝트: 아카데미 소개로 돌아가기' : '우리WON 청년 IT 아카데미: 우리 원픽 프로젝트 상세 보기');
+				card.querySelector('.flip-front').setAttribute('aria-hidden', String(flipped));
+				card.querySelector('.flip-front').inert = flipped;
+				card.querySelector('.flip-back').setAttribute('aria-hidden', String(!flipped));
+				card.querySelector('.flip-back').inert = !flipped;
+			};
+			card.addEventListener('click', toggleCard);
+			card.addEventListener('keydown', (event) => {
+				if (event.key === 'Enter' || event.key === ' ') {
+					event.preventDefault();
+					toggleCard();
+				}
+			});
+		});
 		const filters = document.querySelectorAll('.filter');
 		const experiences = document.querySelectorAll('.experience');
 		const categoryTitles = {
 			ai: ['우리WON 청년 IT 아카데미', '업스테이지 MABC 2026 서포터즈', '창업아이디어 ON · ‘래미 AI’', 'AI-VIBE 부트캠프 · ‘TUTOLOG’', 'AI융합 산학연계 해커톤 · ‘무대뽀’'],
-			startup: ['성균관대 RISE Rise Crew 2기 창업 프로젝트', '창업아이디어 ON · ‘래미 AI’', 'AI-VIBE 부트캠프 · ‘TUTOLOG’', 'AI융합 산학연계 해커톤 · ‘무대뽀’', '성균관대 SeTA 18기 주니어코치', '융합기초프로젝트', '성균관대 SeTA 17기 팀 리더', '잘나가게 골목경제 부활 프로젝트'],
+			startup: ['우리WON 청년 IT 아카데미', '성균관대 RISE Rise Crew 2기 창업 프로젝트', '창업아이디어 ON · ‘래미 AI’', 'AI-VIBE 부트캠프 · ‘TUTOLOG’', 'AI융합 산학연계 해커톤 · ‘무대뽀’', '성균관대 SeTA 18기 주니어코치', '융합기초프로젝트', '성균관대 SeTA 17기 팀 리더', '잘나가게 골목경제 부활 프로젝트'],
 			leadership: ['업스테이지 MABC 2026 서포터즈', '퀀텀 리프레이밍 챌린지 2026', '성균관대 RISE Rise Crew 2기 창업 프로젝트', '창업아이디어 ON · ‘래미 AI’', 'AI-VIBE 부트캠프 · ‘TUTOLOG’', 'AI융합 산학연계 해커톤 · ‘무대뽀’', '성균관대 SeTA 18기 주니어코치', '융합기초프로젝트', '코스닥협회 제3기 기자단장', '성균관대 SeTA 17기 팀 리더', '성균관대 국궁부 ‘청금’ 부회장', '잘나가게 골목경제 부활 프로젝트', '서울교통공사 또타 서포터즈 6기', '영마인드 서포터즈 3기', '경기도교육지원청 발명특기생']
 		};
 		experiences.forEach((experience) => {
